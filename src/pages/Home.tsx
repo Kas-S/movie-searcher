@@ -1,5 +1,9 @@
+import {useMovieSearch} from "../movie-api"
+
 function Home() {
-    return <h1>Hello World!</h1>
+    const {result, setQuery} = useMovieSearch()
+    console.log(result)
+    return <button onClick={() => setQuery("Batman")}>Press Me</button>
 }
 
 export default Home
