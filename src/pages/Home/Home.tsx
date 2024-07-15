@@ -1,9 +1,14 @@
-import {useMovieSearch} from "../movie-api"
+import {useMovieSearch} from "../../movie-api"
+import {SearchBar, SearchResults} from "./components"
 
 function Home() {
     const {result, setQuery} = useMovieSearch()
-    console.log(result)
-    return <button onClick={() => setQuery("Batman")}>Press Me</button>
+    return (
+        <main>
+            <SearchBar setQuery={setQuery}/>
+            {result && <SearchResults results={result.results}/>}
+        </main>
+    )
 }
 
 export default Home
