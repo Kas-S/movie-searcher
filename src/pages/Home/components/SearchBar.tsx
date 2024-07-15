@@ -15,9 +15,9 @@ function SearchBar({setQuery}: SearchBarProps) {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
-            <input type="search" ref={searchRef}/>
-            <button type="submit">Search</button>
+        <form onSubmit={handleSubmit} className="pl-14 my-5 flex gap-3">
+            <input type="search" ref={searchRef} className="border-2 border-solid p-2 rounded-lg w-1/3" placeholder="Search query"/>
+            <button type="submit" className="p-3 rounded-md bg-amber-400 font-bold font-mono">Search</button>
         </form>
     )
 }
