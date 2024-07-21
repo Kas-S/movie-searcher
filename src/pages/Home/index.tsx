@@ -1,7 +1,7 @@
 import {useMovieSearch} from "../../movie-api"
 import {SearchBar, SearchResults} from "./components"
 
-function Home() {
+export default function Home() {
     const {result, setQuery} = useMovieSearch()
     return (
         <main>
@@ -10,5 +10,3 @@ function Home() {
         </main>
     )
 }
-
-export default Home
