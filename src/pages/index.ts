@@ -1,4 +1,4 @@
 import Layout from "./Layout.tsx"
-import Index from "./Home"
+import Home from "./Home"
 
-export {Layout, Index}
+export {Layout, Home}
